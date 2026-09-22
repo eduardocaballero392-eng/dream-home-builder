@@ -95,9 +95,9 @@ const PRICES = [
 
 function Index() {
   const [filter, setFilter] = useState("todas");
-  const [location, setLocation] = useState(LOCATIONS[0]);
-  const [type, setType] = useState(TYPES[0]);
-  const [price, setPrice] = useState(PRICES[0]);
+  const [location, setLocation] = useState(LOCATIONS[0]!);
+  const [type, setType] = useState(TYPES[0]!);
+  const [price, setPrice] = useState(PRICES[0]!);
 
   const visible =
     filter === "todas"
